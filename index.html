@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- Meta tags for character set, compatibility, and viewport -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <!-- External stylesheet link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome icon library link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>  
+   <!-- Main container for the entire content -->
+    <div class="mainContainer">
+        <div class="header">
+            <h1>Weather Application</h1>
+             <!-- Navigation options for temperature units -->
+            <nav>
+              <ul class="options units">
+                  <button class="celcius active">°C</button>
+                  <button class="fahrenheit">°F</button>
+              </ul>
+          </nav>
+        </div>
+        <!-- Search input section -->
+        <div class="searchInput">
+            <input type="text" placeholder="Enter City Name" id="searchInput"/>
+            <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+          <!-- Main weather details section -->
+        <div class="weatherDetails">
+            <div class="weatherIcon">
+                <img src="Sidebar.png" alt="Clouds" id="weatherIcon">
+            </div>
+            <div class="cityDetails">
+                <div class="weather" id="weather"></div>
+                <div class="desc"></div>
+            </div>
+            <div class="date-time">
+                <p id="date-time">Monday, 12:00</p>
+            </div>
+            <div class="main">
+                <div class="windDetails">
+                    <div class="humidityBox">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgr7XehXJkOPXbZr8xL42sZEFYlS-1fQcvUMsS2HrrV8pcj3GDFaYmYmeb3vXfMrjGXpViEDVfvLcqI7pJ03pKb_9ldQm-Cj9SlGW2Op8rxArgIhlD6oSLGQQKH9IqH1urPpQ4EAMCs3KOwbzLu57FDKv01PioBJBdR6pqlaxZTJr3HwxOUlFhC9EFyw/s320/thermometer.png" alt="Humidity">
+                        <div><p class="humidity"></p><span>Humidity</span></div>
+                    </div>
+                    <div class="windSpeed">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyaIguDPkbBMnUDQkGp3wLRj_kvd_GIQ4RHQar7a32mUGtwg3wHLIe0ejKqryX8dnJu-gqU6CBnDo47O7BlzCMCwRbB7u0Pj0CbtGwtyhd8Y8cgEMaSuZKrw5-62etXwo7UoY509umLmndsRmEqqO0FKocqTqjzHvJFC2AEEYjUax9tc1JMWxIWAQR4g/s320/wind.png">
+                        <div><p id="windSpeed"></p><span>Wind Speed</span></div>
+                    </div>
+                </div>
+                  <!-- Hourly weather forecast container -->
+                <div id="hourly-weather">   
+                </div>
+            </div>
+        </div>
+         <!-- Weather data section -->
+        <div class="weather-data">
+          <div class="current-weather">
+            <div class="details">
+              <h2> </h2>
+              <h6>Temperature: °C</h6>
+              <h6>Wind: M/S</h6>
+              <h6>Humidity: %</h6>
+            </div>
+          </div>
+           <!-- Days forecast section -->
+          <div class="days-forecast">
+            <h2>&#128197; Forecast</h2>
+            <ul class="weather-cards">
+              <li class="card">
+                <h3></h3>
+                <h6>Temp: </h6>
+                <h6>Wind: </h6>
+                <h6>Humidity:</h6>
+              </li>
+              <li class="card">
+                <h3></h3>
+                <h6>Temp: </h6>
+                <h6>Wind: </h6>
+                <h6>Humidity:</h6>
+              </li>
+              <li class="card">
+                <h3></h3>
+                <h6>Temp: </h6>
+                <h6>Wind: </h6>
+                <h6>Humidity:</h6>
+              </li>
+              <li class="card">
+                <h3></h3>
+                <h6>Temp: </h6>
+                <h6>Wind: </h6>
+                <h6>Humidity:</h6>
+              </li>
+              <li class="card">
+                <h3></h3>
+                <h6>Temp: </h6>
+                <h6>Wind: </h6>
+                <h6>Humidity:</h6>
+              </li>
+            </ul>
+          </div>
+    </div>
+    </div>
+     <!-- External JavaScript file for scripting -->
+    <script src="script.js"></script>
+</body>
+
+</html>
